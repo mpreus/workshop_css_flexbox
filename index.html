@@ -99,24 +99,24 @@
 			<div class="row">
 				<div class="column">
 					<div class="input-group">
-						<label for="customer_name">Name</label>
-						<input type="text" id="customer_nam" name="name">
+						<label for="customer_name">Name and surname</label>
+						<input type="text" id="customer_nam" name="name" autofocus required />
 					</div>
 					<div class="input-group">
-						<label for="phone_number">Phone</label>
-						<input type="tel" id="phone_number">
+						<label for="phone_number">Phone number</label>
+						<input type="text" id="phone_number" placeholder="add country code" novalidate required />
 					</div>
 					<div class="input-group">
-						<label for="email_address">Email</label>
-						<input type="email" id="email_address">
+						<label for="email_address">E-mail</label>
+						<input type="email" id="email_address" required />
 					</div>
 					<div class="input-group">
-						<label for="pickup_time">Pickup Date</label>
-						<input type="datetime-local" id="pickup_time">
+						<label for="pickup_time">Pick-up date</label>
+						<input type="datetime-local" id="pickup_time" placeholder="format: dd.mm.yyy" required />
 					</div>
 					<div class="input-group">
-						<label for="pickup_place">Pickup Place</label>
-						<select id="pickup_place">
+						<label for="pickup_place">Pick-up place</label>
+						<select id="pickup_place" required>
 							<option value="" selected="selected">Select one</option>
 							<option value="main_office" selected="selected">Main office</option>
 							<option value="airport_office" selected="selected">Airport office</option>
@@ -126,26 +126,28 @@
 						</select>
 					</div>
 					<div class="input-group">
-						<label for="dropoff_place">Dropoff place</label>
-						<input type="text" id="dropoff_place">
-						<datalist id="input-group">
-							<option value="Airport"></option>
-							<option value="Beach"></option>
-							<option value="House_one"></option>
-						</datalist>
+						<label for="dropoff_place">Drop-off place</label>
+						<select id="input-group" required>
+							<option value="" selected="selected">Select one</option>
+							<option value="main_office" selected="selected">Main office</option>
+							<option value="airport_office" selected="selected">Airport office</option>
+							<option value="town_hall" selected="selected">Town Hall</option>
+							<option value="train_station" selected="selected">Train station</option>
+							<option value="bus_station" selected="selected">Bus station</option>
+						</select>
 					</div>
 				</div>
 				<div class="column">
 					<fieldset class="taxi">
 						<legend>What car you need?</legend>
-						<label><input type="radio" id="taxi_sedan" value="sedan">Sedan</label>
-						<label><input type="radio" id="taxi_wagon" value="wagon">Station wagon</label>
-						<label><input type="radio" id="taxi_hatchback" value="hatchback">Hatchback</label>
-						<label><input type="radio" id="taxi_micro" value="micro">Micro car</label>
-						<label><input type="radio" id="taxi_van" value="van">Van</label>
-						<label><input type="radio" id="taxi_suv" value="suv">SUV</label>
-						<label><input type="radio" id="taxi_crossover" value="crossover">Crossover</label>
-						<label><input type="radio" id="taxi_camper" value="camper">Camper car</label>
+						<label><input type="radio" name="car" id="car_sedan" value="sedan">Sedan</label>
+						<label><input type="radio" name="car" id="car_wagon" value="wagon">Station wagon</label>
+						<label><input type="radio" name="car" id="car_hatchback" value="hatchback">Hatchback</label>
+						<label><input type="radio" name="car" id="car_micro" value="micro">Micro car</label>
+						<label><input type="radio" name="car" id="car_van" value="van">Van</label>
+						<label><input type="radio" name="car" id="car_suv" value="suv">SUV</label>
+						<label><input type="radio" name="car" id="car_crossover" value="crossover">Crossover</label>
+						<label><input type="radio" name="car" id="car_camper" value="camper">Camper car</label>
 					</fieldset>
 					
 				</div>
