@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-projekt</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap&subset=latin-ext" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<div>
+			<nav>
+				<a href="">Services</a>
+				<a href="">Our cars</a>
+				<a href="">Regulations</a>
+				<a href="">About us</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div>
+			<h1>rent a car<br/>along with complementary solutions</h1>
+			<h2>consider adding our services</h2>
+		</div>
+	
+		<div class="cards">
+			
+			
+			<article class="card">
+				<img src="images/hatchback-car.svg" alt="image2">
+				<div class="text">
+					<h3>Rent a car</h3>
+					<p>
+						We have full range of cars to fulfill your desire. Sports ones, limousines, SUVs, offroads and even camper cars with full equipment on the board. What kind of trip do you plan now? Let us advise you what suits best. 
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="images/insurance.svg" alt="image3">
+				<div class="text">
+					<h3>Secure companions</h3>
+					<p>
+						Whenever you travel single-handed, with your family or fellow workers, do not hesitate to make the trip safe. Be responsible. Get insurance policy as a car rent package.
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="images/micro-car.svg" alt="image4">
+				<div class="text">
+					<h3>Unexpected breaks?</h3>
+					<p>
+						If you are affraid of unexpected breaks for any reason, get our unique assitance package. On the road, in a hotel room, at the airport... Wherever you feel ambarassed, let us know.
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="images/local-attractions.svg" alt="image5">
+				<div class="text">
+					<h3>Exploit opportunity</h3>
+					<p>
+						More time than you've expected? Exploit the opportunity to see more. With our advice you may visit interesting local attractions or choose the best restaurant.
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="images/special-needs.svg" alt="image6">
+				<div class="text">
+					<h3>Special needs satisfied</h3>
+					<p>
+						Baby seat, blanket, coat, fruits, gluten free food or a bottle of wine. During the trip and while sightseeing, whatever you need we can deliver within hours. Best quality. Let us know where you are and relax.
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="images/book-on-the-go.svg" alt="image1"/>
+				<div class="text">
+					<h3>Book on the go</h3>
+					<p>
+						Any time, day and night, any needs can be met. Just call our turist center and let us make you happy. Our experienced personnel will be delighted assisting you. Satisfaction guaranteed.
+					</p>
+					<button>Read more</button>
+				</div>
+			</article>
+
+		</div>
+
+		<form class="renting-form">
+			<h3>Fill-in th form below to rent a car<br/>and get more for less</h3>
+			<div class="row">
+				<div class="column">
+					<div class="input-group">
+						<label for="customer_name">Name</label>
+						<input type="text" id="customer_nam" name="name">
+					</div>
+					<div class="input-group">
+						<label for="phone_number">Phone</label>
+						<input type="tel" id="phone_number">
+					</div>
+					<div class="input-group">
+						<label for="email_address">Email</label>
+						<input type="email" id="email_address">
+					</div>
+					<div class="input-group">
+						<label for="pickup_time">Pickup Date</label>
+						<input type="datetime-local" id="pickup_time">
+					</div>
+					<div class="input-group">
+						<label for="pickup_place">Pickup Place</label>
+						<select id="pickup_place">
+							<option value="" selected="selected">Select one</option>
+							<option value="main_office" selected="selected">Main office</option>
+							<option value="airport_office" selected="selected">Airport office</option>
+							<option value="town_hall" selected="selected">Town Hall</option>
+							<option value="train_station" selected="selected">Train station</option>
+							<option value="bus_station" selected="selected">Bus station</option>
+						</select>
+					</div>
+					<div class="input-group">
+						<label for="dropoff_place">Dropoff place</label>
+						<input type="text" id="dropoff_place">
+						<datalist id="input-group">
+							<option value="Airport"></option>
+							<option value="Beach"></option>
+							<option value="House_one"></option>
+						</datalist>
+					</div>
+				</div>
+				<div class="column">
+					<fieldset class="taxi">
+						<legend>What car you need?</legend>
+						<label><input type="radio" id="taxi_sedan" value="sedan">Sedan</label>
+						<label><input type="radio" id="taxi_wagon" value="wagon">Station wagon</label>
+						<label><input type="radio" id="taxi_hatchback" value="hatchback">Hatchback</label>
+						<label><input type="radio" id="taxi_micro" value="micro">Micro car</label>
+						<label><input type="radio" id="taxi_van" value="van">Van</label>
+						<label><input type="radio" id="taxi_suv" value="suv">SUV</label>
+						<label><input type="radio" id="taxi_crossover" value="crossover">Crossover</label>
+						<label><input type="radio" id="taxi_camper" value="camper">Camper car</label>
+					</fieldset>
+					
+				</div>
+				<div class="column">
+					<fieldset class="extras">
+						<legend>Extras</legend>
+						<label><input type="checkbox" id="extras_baby" value="baby">Baby seat</label>
+						<label><input type="checkbox" id="extras_repairing_set" value="repairing_set">Repairing set</label>
+						<label><input type="checkbox" id="extras_insurance" value="insurance">Insurance</label>
+						<label><input type="checkbox" id="extras_trunk_organizer" value="tip">Trunk organizer</label>
+						<label><input type="checkbox" id="extras_eu" value="eu">Out of EU package</label>
+
+					</fieldset>
+				</div>
+			</div>
+			<div class="row">
+				<button id="submit">Submit</button>
+			</div>
+		</form>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
