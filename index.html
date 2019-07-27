@@ -6,28 +6,34 @@
 	<meta name="viewport", content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Front-end technologies, CSS, flexbox, HTML, JavaScript, RWD">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap&subset=latin-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div>
 			<nav>
-				<a href="">Services</a>
-				<a href="">Our cars</a>
-				<a href="">Regulations</a>
-				<a href="">About us</a>
+				<a href="#services">Services</a>
+				<a href="#our-cars">Our cars</a>
+				<a href="#">Regulations</a>
+				<a href="#">About us</a>
 			</nav>
 		</div>
 	</header>
 	<main>
+		
 		<div>
 			<h1>rent a car<br/>along with complementary solutions</h1>
 			<h2>consider adding our services</h2>
 		</div>
-	
-		<div class="cards">
-			
-			
+		<div id="img-cover">
+			<div id="picture-wrap">
+				<img src="images/rx-right_600x300.jpg" alt="car1">
+				<img src="images/lx-right_600x300.jpg" alt="car2">
+			</div>
+		</div>
+		
+
+		<div class="cards" id="services">
 			<article class="card">
 				<img src="images/hatchback-car.svg" alt="image2">
 				<div class="text">
@@ -102,11 +108,11 @@
 				<div class="column">
 					<div class="input-group">
 						<label for="customer_name">Name and surname</label>
-						<input type="text" id="customer_nam" name="name" autofocus required />
+						<input type="text" id="customer_name" name="name" required/>
 					</div>
 					<div class="input-group">
 						<label for="phone_number">Phone number</label>
-						<input type="text" id="phone_number" placeholder="add country code" novalidate required />
+						<input type="phone" id="phone_number" placeholder="e.g.: 0044999998888" required />
 					</div>
 					<div class="input-group">
 						<label for="email_address">E-mail</label>
@@ -114,7 +120,7 @@
 					</div>
 					<div class="input-group">
 						<label for="pickup_time">Pick-up date</label>
-						<input type="datetime-local" id="pickup_time" placeholder="format: dd.mm.yyy" required />
+						<input type="date" id="pickup_time" placeholder="format: dd.mm.yyyy" required />
 					</div>
 					<div class="input-group">
 						<label for="pickup_place">Pick-up place</label>
@@ -139,17 +145,17 @@
 						</select>
 					</div>
 				</div>
-				<div class="column">
+				<div class="column" id="our-cars">
 					<fieldset class="taxi">
 						<legend>What car you need?</legend>
-						<label><input type="radio" name="car" id="car_sedan" value="sedan">Sedan</label>
-						<label><input type="radio" name="car" id="car_wagon" value="wagon">Station wagon</label>
-						<label><input type="radio" name="car" id="car_hatchback" value="hatchback">Hatchback</label>
-						<label><input type="radio" name="car" id="car_micro" value="micro">Micro car</label>
-						<label><input type="radio" name="car" id="car_van" value="van">Van</label>
-						<label><input type="radio" name="car" id="car_suv" value="suv">SUV</label>
-						<label><input type="radio" name="car" id="car_crossover" value="crossover">Crossover</label>
-						<label><input type="radio" name="car" id="car_camper" value="camper">Camper car</label>
+						<label><input type="radio" name="car" required id="car_sedan" value="sedan">Sedan</label>
+						<label><input type="radio" name="car" required id="car_wagon" value="wagon">Station wagon</label>
+						<label><input type="radio" name="car" required id="car_hatchback" value="hatchback">Hatchback</label>
+						<label><input type="radio" name="car" required id="car_micro" value="micro">Micro car</label>
+						<label><input type="radio" name="car" required id="car_van" value="van">Van</label>
+						<label><input type="radio" name="car" required id="car_suv" value="suv">SUV</label>
+						<label><input type="radio" name="car" required id="car_crossover" value="crossover">Crossover</label>
+						<label><input type="radio" name="car" required id="car_camper" value="camper">Camper car</label>
 					</fieldset>
 					
 				</div>
@@ -161,7 +167,6 @@
 						<label><input type="checkbox" id="extras_insurance" value="insurance">Insurance</label>
 						<label><input type="checkbox" id="extras_trunk_organizer" value="tip">Trunk organizer</label>
 						<label><input type="checkbox" id="extras_eu" value="eu">Out of EU package</label>
-
 					</fieldset>
 				</div>
 			</div>
@@ -171,7 +176,10 @@
 		</form>
 	</main>
 	<footer>
-		
+		<div>
+			<p>Designed & developed by Maciej Preus</p>
+			<p>copyrights@MaciejPreus</p>
+		</div>
 	</footer>
 </body>
 </html>
