@@ -16,11 +16,6 @@ header {
 	margin-bottom: -1rem;
 }
 
-.flexbox {
-	display: inline-flex;
-	flex-direction: row;
-}
-
 /* navigation */
 nav {
 	margin-left: auto;
