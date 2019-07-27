@@ -1,2 +1,4 @@
 # workshop_css_flexbox
-Exercise in CSS Flexbox technique and responsive layout. Still in progress...
+Enhance of my CSS Flexbox skills and responsive layout.
+CSS transition technique in use. 
+Validation of the form is HTML only as it was no main issue here.
