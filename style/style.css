@@ -32,12 +32,23 @@ nav a {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
 	nav a {
 		color: white;
 		font-size: 0.8rem;
-		line-height: 1rem;
-		margin-left: 1rem;
+		line-height: 0.8rem;
+		margin-left: 0.8rem;
+		margin-right: auto;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav a {
+		color: white;
+		font-size: 0.7rem;
+		line-height: 0.7rem;
+		margin-left: 0.7rem;
 		margin-right: auto;
 		text-decoration: none;
 	}
@@ -62,12 +73,23 @@ h1 {
 	
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
 	h1 {
 		color: #1f203a;
 		font-size: 2rem;
 		margin-top: 1rem;
 		padding-top: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		color: #1f203a;
+		font-size: 1.8rem;
+		margin-top: 0.8rem;
+		padding-top: 0.8rem;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -107,7 +129,7 @@ h3 {
 	opacity: 0;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
 	#picture-wrap {
 		height: 200px;
 		margin: 0 auto;
@@ -120,7 +142,29 @@ h3 {
 		position: absolute;
 		transition: opacity 1.5s ease;
 		width: inherit;
-		border-radius: 10px;
+		border-radius: 8px;
+		box-shadow: 0 0 15px white;
+	}
+
+	#picture-wrap img:hover {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#picture-wrap {
+		height: 150px;
+		margin: 0 auto;
+		position: relative;
+		width: 300px;
+	}
+
+	#picture-wrap img {
+		height: inherit;
+		position: absolute;
+		transition: opacity 1.5s ease;
+		width: inherit;
+		border-radius: 5px;
 		box-shadow: 0 0 15px white;
 	}
 
@@ -218,6 +262,21 @@ button#submit {
 	width: 25%;
 }
 
+@media screen and (max-width: 600px) {
+	button#submit {
+	background: #1f203a;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: inset 2px 2px 2px grey;
+	color: white;
+	font-size: 0.7rem;
+	margin-bottom: 0.8rem;
+	margin-left: 37.5%;
+	padding: 0.6rem;
+	width: 25%;
+	}
+}
+
 /* footer */
 footer {
 	background-color: #1f203a;
@@ -231,16 +290,3 @@ footer p {
  	font-size: 0.8rem;
  	line-height: 0.8rem
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
