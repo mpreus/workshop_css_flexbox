@@ -48,6 +48,7 @@ function init() {
 			imageWidth: "300px",
 			imageHeight: "300px"
 		});
+
 	}
 	let exploitTrip = document.querySelector("button#exploit-opportunities");
 	exploitTrip.addEventListener("click", showOpportunities);
