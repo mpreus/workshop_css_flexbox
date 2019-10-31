@@ -202,6 +202,7 @@ h3 {
 	border-radius: 4px;
 	box-shadow: inset 2px 2px 2px grey;
 	color: white;
+	cursor: pointer;
 	font-size: 0.8rem;
 	margin-bottom: 1.2rem;
 	padding: 0.6rem;
@@ -255,6 +256,7 @@ button#submit {
 	border-radius: 4px;
 	box-shadow: inset 2px 2px 2px grey;
 	color: white;
+	cursor: pointer;
 	font-size: 0.8rem;
 	margin-bottom: 1rem;
 	margin-left: 37.5%;
@@ -269,6 +271,7 @@ button#submit {
 	border-radius: 3px;
 	box-shadow: inset 2px 2px 2px grey;
 	color: white;
+	cursor: pointer;
 	font-size: 0.7rem;
 	margin-bottom: 0.8rem;
 	margin-left: 37.5%;
